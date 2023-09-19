@@ -9,9 +9,14 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 50px;
+
+        @media (max-width: 1185px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .button {
             margin-top: 24px;
@@ -28,7 +33,7 @@
                 background-repeat: no-repeat;
                 background-size: contain;
 
-                @media (max-width: 855px) {
+                @media (max-width: 1185px) {
                     margin-top: 60px;
                 }
             }
